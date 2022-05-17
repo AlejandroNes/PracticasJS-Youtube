@@ -14,3 +14,7 @@ function validarFormulario(e){
     const respuesta = document.getElementById("respuesta");
     respuesta.textContent = `Hola ${nombre} tienes la edad de ${edad}`
 }
+
+//numero entre 1 y 6
+let dado = Number((Math.random() * 6).toFixed(0));
+console.log(dado)
