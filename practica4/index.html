@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>LISTA DE TAREAS</title>
+</head>
+
+<body>
+    <h1>LISTA DE TAREAS</h1>
+    <div class="container">
+        <div>
+            <form id="formulario">
+                <p class="titulo">FORMULARIO</p>
+                <div class="inputs">
+                    <label for="tarea">Tarea</label>
+                    <input type="text" id="tarea">
+                </div>
+                <div class="inputs">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion">
+                </div>
+                <input class="submit" type="submit" value="ENVIAR">
+            </form>
+            <div id="alerta" class="alerta">
+                DATOS ENVIADOS
+            </div>
+        </div>
+        <div>
+            <div class="tareas">
+                <p class="titulo">LISTA DE TAREAS</p>
+                <div id="tareas">
+
+
+                    <div class="tarea">
+                        <h5>Aprender React</h5>
+                        <p>esta semana aprenderlo</p>
+                        <div class="botones">
+                            <button class="boton boton-delete" data-id="1">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="boton boton-check" data-id="1">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- <i class="fa-solid fa-check-double"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tarea">
+                        <h5>Aprender React</h5>
+                        <p>esta semana aprenderlo</p>
+                        <div class="botones">
+                            <button class="boton boton-delete" data-id="1">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="boton boton-check" data-id="1">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- <i class="fa-solid fa-check-double"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tarea">
+                        <h5>Aprender React</h5>
+                        <p>esta semana aprenderlo</p>
+                        <div class="botones">
+                            <button class="boton boton-delete" data-id="1">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="boton boton-check" data-id="1">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- <i class="fa-solid fa-check-double"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tarea">
+                        <h5>Aprender React</h5>
+                        <p>esta semana aprenderlo</p>
+                        <div class="botones">
+                            <button class="boton boton-delete" data-id="1">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="boton boton-check" data-id="1">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- <i class="fa-solid fa-check-double"></i> -->
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tarea">
+                        <h5>Aprender React</h5>
+                        <p>esta semana aprenderlo</p>
+                        <div class="botones">
+                            <button class="boton boton-delete">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="boton boton-check">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- <i class="fa-solid fa-check-double"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

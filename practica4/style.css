@@ -1,0 +1,142 @@
+html{
+    box-sizing: border-box;
+   
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+.container{
+    width: 1200px;
+    max-width: 85%;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px rgba(174, 204, 222, 0.721);
+    padding: 30px 10px;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+}
+.titulo{
+    color: #ffffff;
+    text-align: center;
+    margin: 5px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: rgb(22, 41, 65);
+    color: white;
+}
+
+.alerta{
+    text-align: center;
+    border: 2px solid red;
+    width: 75%;
+    margin: 10px auto;
+    padding: 4px;
+    color: red;
+}
+
+.inputs{
+    display: flex;
+    gap: 10px;
+}
+.inputs label, .inputs input{
+    flex: 1;
+}
+input{
+    padding: 5px;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(0, 134, 224);
+}
+.submit{
+    border: none;
+    background-color: rgb(0, 134, 224);
+    color: #ffffff;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+/* TAREAS */
+.tareas{
+    background-color: rgb(22, 41, 65);
+    padding: 10px;
+    margin: 0 20px;
+    scrollbar-color: dark;
+    height: 70vh;
+    overflow-y: scroll;
+    position: relative;
+    height: 60vh; 
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(47, 56, 74, 0.845);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(35, 50, 72);
+  }
+
+
+.tarea{
+    background-color: #dcf2ff;
+    padding: 10px;
+    margin: 5px 0px;
+}
+.botones{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.boton-delete{
+    background-color: rgb(218, 0, 80);
+    color: #ffffff;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.boton-check{
+    background-color: rgb(0, 109, 234);
+    color: #ffffff;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
